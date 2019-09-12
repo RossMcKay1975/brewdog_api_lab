@@ -1,5 +1,5 @@
 <template lang="html">
-  <li v-on:click="handleClick">{{beer.name}}</li>
+  <li v-on:click="handleClick" v-bind:class="{'favourited': beer.favourite}">{{beer.name}}</li>
 </template>
 
 <script>
@@ -17,6 +17,10 @@ export default {
 
 
 <style lang="css" scoped>
+
+  .favourited {
+    color: red;
+  }
 </style>
 
 export default {

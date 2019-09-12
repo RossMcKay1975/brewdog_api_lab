@@ -12,11 +12,16 @@ export default {
   name: 'beers-list',
   props: ['beers'],
   components: {
-    "list-components": ListComponent
+    "list-component": ListComponent
   }
 }
 
 </script>
 
 <style lang="css" scoped>
+  ul {
+    list-style-type: none;
+  }
+
+
 </style>
